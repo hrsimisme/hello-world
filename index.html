@@ -13,8 +13,10 @@
     </div>
 
     <div id="search-container">
-        <input type="text" id="city-input" placeholder="도시 이름을 영어로 입력 (예: Seoul)">
-        <button onclick="searchCity()">검색</button>
+        <form id="searchform" onsubmit="handleSearch(event)">
+            <input type="text" id="city-input" placeholder="도시 이름을 영어로 입력 (예: Seoul)">
+            <button onclick="searchCity()">검색</button>
+        </form>
     </div>
 
     <div id="globeViz"></div>
