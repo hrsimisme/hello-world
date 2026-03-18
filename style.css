@@ -26,6 +26,10 @@ body { margin: 0; background: #000; overflow: hidden; font-family: sans-serif; }
     position: absolute; top: 110px; left: 50%; transform: translateX(-50%);
     z-index: 20; display: flex; gap: 10px;
 }
+#searchform {
+    width: fit-content;
+    margin: auto;
+}
 #city-input {
     width: 250px; padding: 10px; border-radius: 20px; border: 1px solid #fff;
     background: rgba(255,255,255,0.2); color: white; outline: none;
@@ -277,4 +281,13 @@ body { margin: 0; background: #000; overflow: hidden; font-family: sans-serif; }
     padding: 8px 20px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+@media (max-width : 700px) {
+    #city-input {
+        width: 150px;
+    }
+    #globeViz {
+        padding-top: 70px;
+    }
 }
